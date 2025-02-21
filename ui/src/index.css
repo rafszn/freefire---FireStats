@@ -1,0 +1,394 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  zoom: 1.5;
+  background-color: #181c14;
+  color: #f2f2f2;
+  /* background-image: url("/freefirebg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  height: 100%;
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+/* TODO HEADER */
+header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.366);
+  /* z-index: 3; */
+  h1 {
+    font-family: "Major Mono Display", serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  img {
+    width: 30px;
+  }
+}
+
+/* TODO TOURNAMENT */
+main.tournament {
+  padding: 1rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      color: #f6b402;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-size: 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  }
+
+  .lists {
+    margin: 2rem 1rem;
+
+    .list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0.5rem;
+      background-color: #3c3d37ad;
+      border-radius: 0.4rem;
+      margin: 0.8rem 0rem;
+      transition: all 0.3s ease;
+      /* cursor: pointer; */
+
+      h2 {
+        font-family: "Agu Display", serif;
+        font-weight: 400;
+      }
+
+      .links {
+        display: flex;
+        opacity: 0;
+        align-items: center;
+        font-size: 0.7rem;
+        gap: 15px;
+        transition: all 0.4s ease;
+
+        a {
+          cursor: pointer;
+          padding: 0.4rem;
+          border-radius: 0.3rem;
+        }
+        a:hover {
+          background-color: #333;
+        }
+      }
+    }
+
+    .list:hover {
+      background-color: #3c3d37;
+      .links {
+        opacity: 1;
+      }
+    }
+  }
+
+  .add {
+    input {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      margin-right: 1rem;
+      background-color: transparent;
+      border: 1px solid #f6b402;
+      margin-left: 1rem;
+      outline: 1px solid #f6b402;
+    }
+  }
+}
+
+/* TODO TEAMS */
+main.teams {
+  padding: 1rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      color: #f6b402;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-size: 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  }
+
+  .lists {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .list {
+      display: flex;
+      align-items: center;
+      /* justify-content: space-between; */
+      padding: 1rem 0.5rem;
+      background-color: #3c3d37ad;
+      border-radius: 0.4rem;
+      margin: 0.8rem 0rem;
+      transition: all 0.3s ease;
+      gap: 0.2rem;
+      /* cursor: pointer; */
+
+      img {
+        width: 30px;
+        /* height: 30px; */
+      }
+
+      h2 {
+        font-family: "Agu Display", serif;
+        font-weight: 400;
+      }
+
+      .links {
+        display: flex;
+        opacity: 0;
+        align-items: center;
+        font-size: 0.7rem;
+        gap: 15px;
+        transition: all 0.4s ease;
+
+        a {
+          cursor: pointer;
+          padding: 0.4rem;
+          border-radius: 0.3rem;
+        }
+        a:hover {
+          background-color: #333;
+        }
+      }
+    }
+
+    .list:hover {
+      background-color: #3c3d37;
+      .links {
+        opacity: 1;
+      }
+    }
+  }
+
+  .add {
+    input {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      margin-right: 1rem;
+      background-color: transparent;
+      border: 1px solid #f6b402;
+      margin-left: 1rem;
+      outline: 1px solid #f6b402;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+/* TODO GAMEPLAY */
+main.gameplay {
+  padding: 1rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      color: #f6b402;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-size: 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  }
+
+  .lists {
+    margin: 1rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .list {
+      display: flex;
+      align-items: center;
+      /* justify-content: space-between; */
+      padding: 1rem 0.5rem;
+      background-color: #3c3d37ad;
+      border-radius: 0.4rem;
+      margin: 0.8rem 0rem;
+      transition: all 0.3s ease;
+      gap: 0.5rem;
+      /* cursor: pointer; */
+
+      input {
+        display: none;
+      }
+
+      p {
+        font-family: "Agu Display", serif;
+        font-weight: 400;
+      }
+
+      .links {
+        display: flex;
+        opacity: 0;
+        align-items: center;
+        font-size: 0.7rem;
+        gap: 15px;
+        transition: all 0.4s ease;
+
+        a {
+          cursor: pointer;
+          padding: 0.4rem;
+          border-radius: 0.3rem;
+        }
+        a:hover {
+          background-color: #333;
+        }
+      }
+    }
+
+    .list:hover {
+      background-color: #3c3d37;
+      .links {
+        opacity: 1;
+      }
+    }
+  }
+  .submit {
+    border: 1px solid #f6b402;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* TODO RESULTS */
+main.results {
+  padding: 1rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      color: #f6b402;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      font-size: 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  }
+
+  .result-lists {
+    border: 1px solid rgba(128, 128, 128, 0.477);
+    padding: 0.5rem;
+    border-radius: 1em;
+    background: #000000ab;
+    .row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      /* border: 1px solid green; */
+      padding: 0.7rem 0.5rem;
+      position: relative;
+
+      .medal{
+        position: absolute;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        /* flex: 0.2; */
+        width: 20%;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+      }
+
+      h5 {
+        /* flex: 0.2; */
+        width: 20%;
+        border: 1px solid rgba(241, 237, 237, 0.221);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h5:hover{
+        background-color: #333;
+        color: whi;
+      }
+    }
+  }
+}

@@ -28,6 +28,11 @@ Steps to Run the Application
    - Start the server:
      run: npm start
 
+   - Environment Variables
+     create: .env file
+     OPENAI_KEY = {you openai api key}
+     MONGO_URI = {your mongodb connection string}
+
 3. Run the Front End  
    - Open a new terminal in VS Code. 
  
